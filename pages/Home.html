@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meraki Watches | Luxury Timepieces</title>
+    <meta name="description" content="Explore the Meraki Collection—timeless design and exquisite craftsmanship in every piece.">
+    <link rel="stylesheet" href="../css/globals.css" />
+    <link rel="stylesheet" href="../css/Home.css" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="Home.html" class="nav-brand">
+                <img src="../assets/images/logo.png" alt="Meraki Watches Logo" />
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="Home.html" class="active">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Research.html">Research</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <video autoplay loop muted playsinline class="hero-video">
+                <source src="../assets/videos/Hero-Video.mp4" type="video/mp4" />
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title">Watch It <span class="gold-text">|</span> Own It</h1>
+                <p class="hero-subtitle">
+                    At MERAKI, time is not just measured; it's celebrated. Our meticulously crafted 
+                    timepieces are designed for those who appreciate the finer things in life.
+                </p>
+                <div class="hero-actions">
+                    <a href="Products.html" class="btn btn-solid">Find Yours</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="featured-section section-padding">
+            <div class="container">
+                <div class="section-intro">
+                    <h2 class="section-title">Our Featured <span class="gold-text">Products</span></h2>
+                    <p class="section-subtitle">
+                        Explore the Meraki Collection—timeless design and exquisite craftsmanship in every piece.
+                        These watches combine elegance, precision, and timeless design, making each piece a 
+                        statement of sophistication and style.
+                    </p>
+                </div>
+
+                <div class="slideshow-wrapper">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="../assets/images/slideshow1.png" alt="Featured Watch 1">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="../assets/images/slideshow2.png" alt="Featured Watch 2">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="../assets/images/slideshow3.png" alt="Featured Watch 3">
+                        </div>
+                    </div>
+                    <div class="slideshow-controls">
+                        <button class="prev" onclick="plusSlides(-1)" aria-label="Previous Slide">&#10094;</button>
+                        <button class="next" onclick="plusSlides(1)" aria-label="Next Slide">&#10095;</button>
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Collections -->
+        <section class="collections-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Check Our <span class="gold-text">New Collections</span></h2>
+                
+                <div class="product-grid">
+                    <!-- Legacy -->
+                    <article class="product-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assets/images/Legacy.png" alt="Legacy Watch">
+                        </div>
+                        <div class="card-content">
+                            <h3>Legacy</h3>
+                            <p class="price">$7,780.99</p>
+                            <p class="desc">The Legacy collection embodies timeless elegance...</p>
+                            <button class="btn btn-solid">Claim Yours</button>
+                        </div>
+                    </article>
+                    <!-- Infinity -->
+                    <article class="product-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assets/images/Infinity.png" alt="Infinity Watch">
+                        </div>
+                        <div class="card-content">
+                            <h3>Infinity</h3>
+                            <p class="price">$6,505.99</p>
+                            <p class="desc">The Infinity collection symbolizes the boundless...</p>
+                            <button class="btn btn-solid">Claim Yours</button>
+                        </div>
+                    </article>
+                    <!-- Allure -->
+                    <article class="product-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assets/images/Allure.png" alt="Allure Watch">
+                        </div>
+                        <div class="card-content">
+                            <h3>Allure</h3>
+                            <p class="price">$12,500.99</p>
+                            <p class="desc">The Allure collection captures the captivating...</p>
+                            <button class="btn btn-solid">Claim Yours</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories and Featured -->
+        <section class="categories-section section-padding">
+            <div class="container">
+                <!-- Tabs -->
+                <ul class="categories-tabs">
+                    <li><a href="#" class="tab active">All</a></li>
+                    <li><a href="#" class="tab">Classics</a></li>
+                    <li><a href="#" class="tab">Professional</a></li>
+                </ul>
+
+                <div class="product-grid extended-grid">
+                    <!-- Versa -->
+                    <article class="product-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assets/images/Versa.png" alt="Versa Watch">
+                        </div>
+                        <div class="card-content"><h3>Versa</h3><p class="price">$7,499.99</p><button class="btn btn-solid">Claim Yours</button></div>
+                    </article>
+                    <!-- Elegance -->
+                    <article class="product-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assets/images/Elegance.png" alt="Elegance Watch">
+                        </div>
+                        <div class="card-content"><h3>Elegance</h3><p class="price">$14,999.99</p><button class="btn btn-solid">Claim Yours</button></div>
+                    </article>
+                    <!-- Heritage -->
+                    <article class="product-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assets/images/Heritage.png" alt="Heritage Watch">
+                        </div>
+                        <div class="card-content"><h3>Heritage</h3><p class="price">$9,999.97</p><button class="btn btn-solid">Claim Yours</button></div>
+                    </article>
+                    <!-- Imperium -->
+                    <article class="product-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assets/images/Imperium.png" alt="Imperium Watch">
+                        </div>
+                        <div class="card-content"><h3>Imperium</h3><p class="price">$7,499.99</p><button class="btn btn-solid">Claim Yours</button></div>
+                    </article>
+                    <!-- Aether -->
+                    <article class="product-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assets/images/Aether.png" alt="Aether Watch">
+                        </div>
+                        <div class="card-content"><h3>Aether</h3><p class="price">$14,999.99</p><button class="btn btn-solid">Claim Yours</button></div>
+                    </article>
+                    <!-- Majesty -->
+                    <article class="product-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assets/images/Majesty.png" alt="Majesty Watch">
+                        </div>
+                        <div class="card-content"><h3>Majesty</h3><p class="price">$9,999.97</p><button class="btn btn-solid">Claim Yours</button></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section section-padding">
+            <div class="container">
+                <div class="newsletter-box glass-panel">
+                    <h2>Stay <span class="gold-text">Updated</span></h2>
+                    <p>Sign up for our newsletter to get the latest updates and exclusive offers.</p>
+                    <form action="#" class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!')">
+                        <input type="email" name="email" placeholder="Enter your best email..." required />
+                        <button type="submit" class="btn btn-solid">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Meraki Watches</h3>
+                <p style="color: var(--color-text-secondary); margin-bottom: 20px;">Celebrating time, precision, and the finer things in life.</p>
+                <div class="social-links">
+                    <a href="#"><img src="../assets/images/fblogo.png" alt="Facebook"></a>
+                    <a href="#"><img src="../assets/images/iglogo.png" alt="Instagram"></a>
+                    <a href="#"><img src="../assets/images/twlogo.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="Research.html">Research</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul style="color: var(--color-text-secondary);">
+                    <li>Email: support@merakiwatches.com</li>
+                    <li>Phone: +123 456 7890</li>
+                    <li>123 Luxury Lane, Geneva, CH</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Meraki Watches. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/Home.js"></script>
+</body>
+</html>

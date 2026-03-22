@@ -1,0 +1,112 @@
+/* Custom Styles for Research Page */
+
+/* PAGE HEADER */
+.page-header {
+    margin-top: 80px; 
+    padding: var(--spacing-lg) 0 var(--spacing-md);
+    text-align: center;
+    background: radial-gradient(circle at center, #1f1f1f 0%, #0a0a0a 100%);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.page-title {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+    color: var(--color-text-secondary);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* INTRO */
+.lead-text {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: var(--color-text-primary);
+    font-family: var(--font-heading);
+}
+
+/* DATA TABLE */
+.table-responsive {
+    overflow-x: auto;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--box-shadow);
+    background: rgba(0,0,0,0.4);
+    border: 1px solid var(--color-border);
+}
+
+.styled-table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+}
+
+.styled-table thead tr {
+    background-color: rgba(212, 175, 55, 0.1);
+    color: var(--color-accent);
+    text-align: left;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.styled-table tbody tr {
+    transition: background-color var(--transition-fast);
+}
+
+.styled-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: none;
+}
+
+/* ANALYSIS GRID */
+.analysis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.analysis-card {
+    padding: 0; 
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.analysis-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--color-border);
+    transition: transform var(--transition-normal);
+}
+
+.analysis-card:hover .analysis-img {
+    transform: scale(1.05);
+}
+
+.analysis-card h3 {
+    padding: 1.5rem 1.5rem 0.5rem;
+    font-size: 1.5rem;
+    color: var(--color-accent);
+}
+
+.analysis-card p {
+    padding: 0 1.5rem 1.5rem;
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+    flex-grow: 1;
+}
